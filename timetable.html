@@ -5,9 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        table, th, tr, td {
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .timetable, th, tr, td {
             border: 1px solid black;
             border-collapse: collapse;
+            text-align: center;
+        }
+
+        .upperdetails {
+            border: none;
         }
     </style>
     <title>NMIMS TT</title>
@@ -15,57 +25,155 @@
 <body>
     <img src="https://www.nmims.edu/images/nmims-university-logo.png" alt="">
     <span>School of Technology Management & Engineering | Navi Mumbai Campus</span>
-    <table></table>
+
     <table>
+        <colgroup>
+            <col span="1" style="width: auto;">
+            <col span="1" style="width: auto;">
+            <col span="1" style="width: auto;">
+            <col span="1" style="width: auto;">
+        </colgroup>
+        <th class="upperdetails">Course: B.Tech (CSBS)</th>
+        <th class="upperdetails">Class: Third Year | Semester - VI</th>
+        <th class="upperdetails">AY 2021-22</th>
+        <th class="upperdetails">w.e.f. 06/12/2021</th>
+    </table>
+
+    <table>
+        <th class="upperdetails">Class Room:  C005 & C220</th>
+    </table>
+
+    <table class="timetable">
+        <colgroup>
+            <col span="1" style="width: auto">
+            <col span="1" style="width: auto">
+            <col span="1" style="width: auto">
+            <col span="1" style="width: auto">
+            <col span="1" style="width: auto">
+            <col span="1" style="width: auto">
+            <col span="1" style="width: auto">
+        </colgroup>
         <tr>
             <td colspan="2">Date</td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
+            <td colspan="2"></td>
         </tr>
         <tr>
             <td colspan="2">Time/Day</td>
-            <td>Monday</td>
-            <td>Tuesday</td>
-            <td>Wednesday</td>
-            <td>Thursday</td>
-            <td>Friday</td>
-            <td>Saturday</td>
+            <td colspan="2">Monday</td>
+            <td colspan="2">Tuesday</td>
+            <td colspan="2">Wednesday</td>
+            <td colspan="2">Thursday</td>
+            <td colspan="2">Friday</td>
+            <td colspan="2">Saturday</td>
         </tr>
         <tr>
             <td>9:00 AM</td>
             <td>10:00 AM</td>
+            <td style="background-color: #FF8C00;">DMA (P) MP (Programming Lab)</td>
+            <td style="background-color: #FFB6C1">MWA (P) AP (Lab-102)</td>
+            <td></td>
+            <td></td>
+            <td style="background-color: #1E90FF;">BCVS PH (C005)</td>
+            <td style="background-color: #1E90FF;">BCVS PH (C005)</td>
+            <td style="background-color: #FF8C00;">DMA MP (Lab-103)</td>
+            <td style="background-color: #FFB6C1">MWA AP (C005)</td>
+            <td style="background-color: #98FB98;">CN (P) B2 AB (Programming Lab)</td>
+            <td style="background-color: #DCDCDC;">IS (P) B1 PB (Data structure Lab)</td>
+            <td style="background-color: #1E90FF;">BCVS (T) B2 PH (Lab-104)</td>
+            <td style="background-color: #98FB98;">CN (P) B1 AB (Programming Lab)</td>
         </tr>
         <tr>
             <td>10:05 AM</td>
             <td>11:05 AM</td>
+            <td style="background-color: #FF8C00;">DMA (P) MP (Programming Lab)</td>
+            <td style="background-color: #FFB6C1">MWA (P) AP (Lab-102)</td>
+            <td></td>
+            <td></td>
+            <td style="background-color: #1E90FF;">BCVS PH (C005)</td>
+            <td style="background-color: #1E90FF;">BCVS PH (C005)</td>
+            <td style="background-color: #FF69B4;">AI AP (C005)</td>
+            <td style="background-color: #FF69B4;">AI AP (C005)</td>
+            <td style="background-color: #98FB98;">CN (P) B2 AB (Programming Lab)</td>
+            <td style="background-color: #DCDCDC;">IS (P) B1 PB (Data structure Lab)</td>
+            <td style="background-color: #1E90FF;">BCVS (T) B2 PH (Lab-104)</td>
+            <td style="background-color: #98FB98;">CN (P) B1 AB (Programming Lab)</td>
         </tr>
         <tr>
             <td>11:05 AM</td>
             <td>11:15 AM</td>
+            <td colspan="13">Short Break</td>
         </tr>
         <tr>
             <td>11:15 AM</td>
             <td>12:15 PM</td>
+            <td style="background-color: #FF69B4;">AI (P) B1 AP (Programming Lab)</td>
+            <td style="background-color: #DCDCDC;">IS (P) B2 PB (Data Structure Lab)</td>
+            <td style="background-color: #FF69B4;">AI AP (C005)</td>
+            <td style="background-color: #FF69B4;">AI AP (C005)</td>
+            <td style="background-color: #6A5ACD;">FCA JB (C005)</td>
+            <td style="background-color: #6A5ACD;">FCA JB (C005)</td>
+            <td style="background-color: #DCDCDC;">IS PB (C220)</td>
+            <td style="background-color: #DCDCDC;">IS PB (C220)</td>
+            <td style="background-color: #DCDCDC;">IS PB (C220)</td>
+            <td style="background-color: #DCDCDC;">IS PB (C220)</td>
+            <td style="background-color: #1E90FF;">BCVS (T) B1 PH (Lab-104)</td>
+            <td style="background-color: #FF69B4;">AI (P) B2 AP (Programming Lab)</td>
         </tr>
         <tr>
             <td>12:20 PM</td>
             <td>1:20 PM</td>
+            <td style="background-color: #FF69B4;">AI (P) B1 AP (Programming Lab)</td>
+            <td style="background-color: #DCDCDC;">IS (P) B2 PB (Data Structure Lab)</td>
+            <td style="background-color: #98FB98;">CN AB (C005)</td>
+            <td style="background-color: #98FB98;">CN AB (C005)</td>
+            <td style="background-color: #6A5ACD;">FCA JB (C005)</td>
+            <td style="background-color: #6A5ACD;">FCA JB (C005)</td>
+            <td style="background-color: #DCDCDC;">IS PB (C220)</td>
+            <td style="background-color: #DCDCDC;">IS PB (C220)</td>
+            <td style="background-color: #6A5ACD;">FCA JB (C005)</td>
+            <td style="background-color: #6A5ACD;">FCA JB (C005)</td>
+            <td style="background-color: #1E90FF;">BCVS (T) B1 PH (Lab-104)</td>
+            <td style="background-color: #FF69B4;">AI (P) B2 AP (Programming Lab)</td>
         </tr>
         <tr>
             <td>1:20 PM</td>
             <td>2:00 PM</td>
+            <td colspan="13">Lunch Break</td>
         </tr>
         <tr>
             <td>2:00 PM</td>
             <td>3:00 PM</td>
+            <td style="background-color: #FF69B4;">AI AP (C005)</td>
+            <td style="background-color: #FF69B4;">AI AP (C005)</td>
+            <td style="background-color: #FF8C00;">DMA MP (Lab-103)</td>
+            <td style="background-color: #FFB6C1">MWA AP (C005)</td>
+            <td style="background-color: #FF8C00;">DMA MP (Lab-103)</td>
+            <td style="background-color: #FFB6C1">MWA AP (C005)</td>
+            <td style="background-color: #98FB98;">CN AB (C005)</td>
+            <td style="background-color: #98FB98;">CN AB (C005)</td>
+            <td style="background-color: #6A5ACD;">FCA (T) B1 JB (C005)</td>
+            <td></td>
+            <td style="background-color: #98FB98;">CN AB (C005)</td>
+            <td style="background-color: #98FB98;">CN AB (C005)</td>
         </tr>
         <tr>
             <td>3:05 PM</td>
             <td>4:05 PM</td>
+            <td style="background-color: #6A5ACD;">FCA (T) B2 JB (C005)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
         </tr>
     </table>
 </body>
