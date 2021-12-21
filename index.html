@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <style>
         /* #header {
             color: brown;
@@ -38,6 +39,12 @@
                 background-color: black;
                 color: blue;
             }
+        }
+
+        .Internal-CSS {
+            background-color: greenyellow;
+            color: red;
+            font-size: 30px;
         }
     </style>
     <title>Kartik Padave</title>
@@ -168,12 +175,18 @@
         and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS 
         in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve 
         the page load speed between the pages that share the file and its formatting.
-    </p> -->
+    </p>
 
     <h1>Animation of Background color</h1>
     <div id="myDiv">
         <p>Gradually change background color from White to Black.</p>
     </div>
+
+    <div style="background-color: black; color: aqua;">This is using inline CSS</div>
+    <div class="Internal-CSS">This is using internal CSS</div>
+    <div class="External-CSS">This is using external CSS</div> -->
+
+    <script src="index.js"></script>
 </body>
 <!-- <frameset cols="200, *">
     <frame src="nmims.html" name="menu-page"/>
