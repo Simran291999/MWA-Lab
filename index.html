@@ -244,12 +244,62 @@
         document.getElementById("demo").innerHTML = myObj.cars.car2;
     </script> -->
 
-    <h1 id="id1">My Heading 1</h1>
+    <!-- <h1 id="id1">My Heading 1</h1>
 
     <button type="button" onclick="document.getElementById('id1').style.color='red'">Click Me!</button>
     <button type="button" onclick="document.getElementById('id1').innerHTML='Now not allowed!'">Ohh no!</button>
     <button type="button" onclick="document.getElementById('id1').style.color='black'">Black?</button>
-    <button type="button" onclick="document.getElementById('id1').innerHTML='My Heading 1!'">Original!</button>
+    <button type="button" onclick="document.getElementById('id1').innerHTML='My Heading 1!'">Original!</button> -->
+
+    <!-- <form id="frm1" action="/action_page.php">
+        First Name: <input type="text" name="fname" id="NMIMS"><br>
+        Last Name: <input type="text" name="lname" id="NM"><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <p>
+        Click "Try it" to display the value of each element in the form.
+    </p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="demo"></p>
+
+    <script>
+        function myFunction() {
+            var x = document.forms["frm1"];
+            var text = "";
+            var i;
+
+            for(i = 0; i < x.length; i++) {
+                text += x.elements[i].value + "<br>";
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        }
+    </script> -->
+
+    <p>Please put a number between 5 to 10</p>
+    <input type="text" id="demo">
+    <button type="button" onclick="myFunction()">Test Input</button>
+    <p id="p01"></p>
+
+    <script>
+        function myFunction() {
+            var message, x;
+            message = document.getElementById("p01");
+            message.innerHTML = "";
+            x = document.getElementById("demo").value;
+
+            try {
+                x = Number(x)
+                if (x == "") throw "empty";
+                if (isNaN(x)) throw "Not a Number";
+                if (x < 5) throw "too low";
+                if (x > 10) throw "too high";
+            }
+            catch(err) {
+                message.innerHTML = "Input is " + err;
+            }
+        }
+    </script>
 </body>
 <!-- <frameset cols="200, *">
     <frame src="nmims.html" name="menu-page"/>
