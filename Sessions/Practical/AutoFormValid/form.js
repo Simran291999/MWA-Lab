@@ -28,7 +28,7 @@ function Validation() {
         return false;
     }
 
-    if(phone.value == "") {
+    if(phone.validity.rangeOverflow) {
         document.getElementById("phone-demo").innerHTML = "Enter valid phone number";
         return false;
     }
