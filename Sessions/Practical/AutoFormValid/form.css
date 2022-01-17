@@ -1,10 +1,16 @@
+body {
+    background-color: aliceblue;
+}
+
 div {
+    background-color: whitesmoke;
 	box-sizing: border-box;
-	width: 100%;
-	border: 100px solid black;
-	float: left;
+	width: 50%;
+	border: 5px solid black;
 	align-content: center;
 	align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1 {
@@ -18,4 +24,12 @@ form {
 
 .demos {
     color: red;
+}
+
+.buttons {
+    width: 10%;
+}
+
+.buttons:hover {
+    background-color: aliceblue;
 }
