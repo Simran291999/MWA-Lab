@@ -11,16 +11,20 @@
 	<h1 style="text-align: center;">Validation Form</h1>
 	<form name="RegForm">
 		<p>Name: <input type="text" name="Name" id="1name"/></p>
+        <p id="name-demo" class="demos"></p>
 		<br>
 		<br>
 		<p>E-mail Address: <input type="email" name="Email" id="2email"/></p>
+		<br>
+		<p>Age: <input type="number" name="Age" id="7age" min="18" max="25" required/></p>
+        <p id="age-demo" class="demos"></p>
 		<br>
 		<p>Password: <input type="password" name="Password" id="3password"/></p>
 		<br>
 		<p>Re-enter Password: <input type="password" name="ConfirmPassword" id="4confirmpassword"/></p>
 		<br>
-		<p>Telephone: <input type="number" name="Phone" id="5phone" min="10" max="10" required/></p>
-        <p id="phone-demo"></p>
+		<p>Phone: <input type="number" name="Phone" id="5phone"/></p>
+        <p id="phone-demo" class="demos"></p>
 		<br>
 
 		<p>
@@ -34,6 +38,7 @@
 				<option>BSC</option>
 			</select>
 		</p>
+        <p id="course-demo" class="demos"></p>
 		<br>
 		<br>
 		<p>
