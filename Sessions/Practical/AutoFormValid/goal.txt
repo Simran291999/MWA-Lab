@@ -1,0 +1,5 @@
+Validation of HTML using JavaScript
+1. AUtomatic form Validation
+2. Constraint Validation using HTML
+2. Constraint Validation using DOM Methods
+2. Constraint Validation using DOM Properties

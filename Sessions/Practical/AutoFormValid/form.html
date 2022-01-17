@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Form Validation</title>
+</head>
+<body>
+	<h1 style="text-align: center;">Validation Form</h1>
+	<form name="RegForm">
+		<p>Name: <input type="text" name="Name" id="1name"/></p>
+		<br>
+		<br>
+		<p>E-mail Address: <input type="email" name="Email" id="2email"/></p>
+		<br>
+		<p>Password: <input type="password" name="Password" id="3password"/></p>
+		<br>
+		<p>Re-enter Password: <input type="password" name="ConfirmPassword" id="4confirmpassword"/></p>
+		<br>
+		<p>Telephone: <input type="number" name="Phone" id="5phone" min="10" max="10" required/></p>
+        <p id="phone-demo"></p>
+		<br>
+
+		<p>
+            SELECT YOUR COURSE
+			<select type="text" value="" name="Subject" id="6course">
+				<option>None</option>
+				<option>BTECH/BE</option>
+				<option>BBA</option>
+				<option>B.COM</option>
+				<option>MBA</option>
+				<option>BSC</option>
+			</select>
+		</p>
+		<br>
+		<br>
+		<p>
+			<input type="submit" value="send" name="Submit" onclick="return Validation()"/>
+			<input type="reset" value="Reset" name="Reset"/>
+		</p>
+	</form>
+
+    <script src="form.js"></script>
+</body>
+</html>
