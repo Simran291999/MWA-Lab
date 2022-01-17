@@ -10,25 +10,42 @@
 <body>
 	<h1 style="text-align: center;">Validation Form</h1>
 	<form name="RegForm">
-		<p>Name: <input type="text" name="Name" id="1name"/></p>
+		<p>Name:
+            <br>
+            <input type="text" name="Name" id="1name"/>
+        </p>
         <p id="name-demo" class="demos"></p>
-		<br>
-		<br>
-		<p>E-mail Address: <input type="email" name="Email" id="2email"/></p>
-		<br>
-		<p>Age: <input type="number" name="Age" id="7age" min="18" max="25" required/></p>
+
+		<p>E-mail Address:
+            <br>
+            <input type="email" name="Email" id="2email"/>
+        </p>
+
+		<p>Age:
+            <br>
+            <input type="number" name="Age" id="7age" min="18" max="25" required/>
+        </p>
         <p id="age-demo" class="demos"></p>
-		<br>
-		<p>Password: <input type="password" name="Password" id="3password"/></p>
-		<br>
-		<p>Re-enter Password: <input type="password" name="ConfirmPassword" id="4confirmpassword"/></p>
-		<br>
-		<p>Phone: <input type="number" name="Phone" id="5phone" max="10000000000"/></p>
+
+		<p>Password:
+            <br>
+            <input type="password" name="Password" id="3password"/>
+        </p>
+
+		<p>Re-enter Password:
+            <br>
+            <input type="password" name="ConfirmPassword" id="4confirmpassword"/>
+        </p>
+        
+		<p>Phone:
+            <br>
+            <input type="number" name="Phone" id="5phone" max="10000000000"/>
+        </p>
         <p id="phone-demo" class="demos"></p>
-		<br>
 
 		<p>
-            SELECT YOUR COURSE
+            Select course:
+            <br>
 			<select type="text" value="" name="Subject" id="6course">
 				<option>None</option>
 				<option>BTECH/BE</option>
@@ -39,8 +56,7 @@
 			</select>
 		</p>
         <p id="course-demo" class="demos"></p>
-		<br>
-		<br>
+        
 		<p>
 			<input type="submit" value="send" name="Submit" onclick="return Validation()"/>
 			<input type="reset" value="Reset" name="Reset"/>
