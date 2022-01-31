@@ -1,4 +1,4 @@
-<!-- Program to write from the end in file.txt with pointer at end -->
+<!-- Program to create file for write only. Gives error if file exists -->
 <?php
 $myfile = fopen("file-x.txt", "x") or die("Unable to open file!");
 $txt = "\nKartik Padave\n20\npadavekartik@gmail.com";

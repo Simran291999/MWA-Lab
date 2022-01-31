@@ -1,4 +1,4 @@
-<!-- Program to write from the end in file.txt with pointer at end -->
+<!-- Program to write from the end in file.txt with pointer at end. Create new file if does not exist -->
 <?php
 $myfile = fopen("file.txt", "r") or die("Unable to open file!");
 echo fread($myfile,filesize("file.txt"));
